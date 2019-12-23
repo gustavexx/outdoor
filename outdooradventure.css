@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.main-content-grid {
+        display: grid;
+        grid-template-columns: 200px minmax(350px,1008px) minmax(200px, 250px);
+        margin-left: 13em;
+        margin-right: 8em;
+        margin-top: 0.75em;
+        grid-column-gap: 1em;
+    }
+.grid-buttons {
+    grid-column: 1 / span 1;
+    margin-left: 1.5em;
+}
+.social-media-icons
+{
+    justify-self: right;
+}
+.social-media-icons a {
+    text-decoration: none;
+}
+.grid-main-logo {
+    text-align: center;
+}
+
+.grid-buttons li {
+    font-family: sans-serif;
+    border-radius: 20px;
+    background-color: #0172BA;
+    padding: 8px 20px 8px 20px;
+    margin-right: 1.5em;
+    
+    }
+
+    .grid-buttons li:hover {
+        background-color: #089247;
+    }
+
+    .grid-buttons a{
+        color: white;
+        text-decoration: none;
+    }
+    nav li {
+        display: inline;
+    }
+    header {
+        margin-bottom: 1em;
+    }
+
+    .grid-container-nav {
+        display: grid;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        grid-column: 2;
+        text-align: center;
+        background-color: #ECF7FE;
+        border-top: 2px solid #0172BA;
+        border-bottom: 2px solid #0172BA;
+        padding: 1.25em 0 1.25em 0;
+    }
+
+    .grid-nav-links li {
+        font-family: sans-serif;
+        border-radius: 20px;
+        background-color: white;
+        padding: 8px 20px 8px 20px;
+        margin-left: 2.5em;
+        border: 2px solid #0172BA;    
+    }
+
+    .grid-nav-links li:hover {
+        background-color: #003557;
+    }
+
+    .grid-nav-links a {
+        color: #0172BA;
+        text-decoration: none;
+    }
+
+    .column-2 {
+        grid-column: 2;
+    }
+
+    .column-3 {
+        grid-column: 3;
+        
+    }
+
+    .trails-grid {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        background-color: #CEECFE;
+        border: 2px solid grey;
+        width: 95%;
+        margin: 0 auto 0 auto;
+    }
+
+    .trails-title {
+        text-align: center;
+        grid-column: 2;
+    }
+
+    .trails-title h3 {
+        background-color: #CEECFE;
+        color: black;
+    }
+
+    .provincial-parks-list {
+        grid-column: 3;
+        margin-right: 1em;
+    }
+
+    .national-parks-list {
+        grid-column: 1;
+        margin-left: 2em;
+    }
+
+    .national-parks-list ul,
+    .provincial-parks-list ul {
+        margin-left: 1em;
+    }
+
+    .national-parks-list h3,
+    .provincial-parks-list h3 {
+        background-color: #CEECFE;
+        color: black;
+        text-align: left;
+    }
+    .footer-section {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr 2fr 2fr 2fr;
+        background-color: #ECF7FE;
+        border-top: 2px solid #0172BA;
+        border-bottom: 2px solid #0172BA;
+    }
+
+    .footer-logo {
+        grid-column: 1;
+    }
+    
+    .first-row {
+        grid-row: 1;
+    }
+
+    .column-2-footer {
+        grid-column: 2;
+    }
+
+    .column-3-footer {
+        grid-column: 3;
+    }
+
+    .column-4-footer {
+        grid-column: 4;
+    }
+
+    .column-5-footer {
+        grid-column: 5;
+    }
+
+    .footer-section > * {
+        margin-top: 1em;
+    }
+
+    .horizontal-line {
+       border-bottom: 2px solid #0172BA;
+       width: 90%; 
+    }
+
+    .horizontal-line-last-column {
+       border-bottom: 2px solid #0172BA;
+    }
+
+    @media screen and (max-width: 1024px) {
+        
+        .grid-container, .grid-container-nav,
+        .main-content-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            position: relative;
+            
+        }
+
+        .grid-buttons {
+            grid-column: 1;
+            grid-row: 2;
+            text-align: center;
+        }
+
+        .grid-buttons li {
+            display: block;
+            margin: 10px;
+        }
+
+        .social-media-icons {
+            display: none;
+        }
+
+        .main-content-grid {
+            margin: 10px;
+        }
+        .grid-nav-links {
+             grid-column: 1;
+             text-align: center;
+        }
+
+         .grid-nav-links li {
+             display: block;
+             margin: 10px;
+        }
+
+        .column-1 {
+            display: none;
+        }
+         
+         .column-2 {
+             grid-column: 1;
+        }
+
+         .column-3 {
+              grid-column: 1;
+              grid-row: 2;
+        }
+
+        .gallery-flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        
+        
+    }
+
+    @media screen and (max-width: 650px ) {
+
+
+        .trails-grid {
+           display: grid;
+           grid-template-columns: 1fr;
+        }
+
+        .trails-title {
+            grid-column: 1;
+            margin-bottom: 1em;
+        }
+
+        .vl {
+            display: none;
+        }
+
+        .provincial-parks-list h3, 
+        .national-parks-list h3 {
+            text-align: center;
+        }
+
+        .provincial-parks-list, .national-parks-list {
+
+            grid-column: 1;
+            margin-left: 2em;
+        }
+
+        .provincial-parks-list {
+            margin-right: 0;
+        }
+
+        .national-parks-list ul, 
+        .provincial-parks-list ul   {
+            display: table;
+            margin: 0 auto;
+            
+           
+        }
+        .national-parks-list li {
+            margin-left: 3.5em;
+            
+        }
+
+        .footer-section {
+            display: grid;
+            grid-template-columns: 1fr;
+        
+        }
+        
+    }

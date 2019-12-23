@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Author: Gustavo Marcano -->
+    <title>Outdoor Adventure.</title>
+    <link rel="stylesheet" href="outdooradventure.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .ad-image-1 {
+            margin-bottom: 2.5em;
+        }
+
+        
+
+        .gallery h3,
+        .column-3 h3,
+        .column-2 h2,
+        .column-3 h2 {
+            text-align: center;
+            color: white;
+            background-color: #0172BA;
+            margin-bottom: 0.5em;
+            font-weight: normal;
+        }
+
+        .column-2 .hiking-mountain-image {
+            float: right;
+        }
+
+        .column-2 .winterhiker-image {
+            float: left;
+            margin-right: 0.5em;
+        }
+
+        .column-2 p,
+        .column-3 p {
+            margin-top: 1em;
+        }
+
+        .types-of-canoes li {
+            margin-left: 1em;
+            width: 100%;
+        }
+
+
+        .vl {
+            margin: 0.25em auto 0 auto;
+            border-left: 2px solid grey;
+            grid-column: 2;
+        }
+
+        .gallery h3 {
+            margin-top: 1em;
+            margin-bottom: 0;
+
+        }
+
+        .gallery-flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+			justify-content: center;
+        }
+
+        .item {
+            text-align: center;
+            border: 1px solid black;
+            margin: 0.5em;
+            /*flex: 21%;*/
+        }
+
+        .item img {
+            width: 100%;
+        }
+
+        .credits {
+            grid-column: 1 /span 3;
+            margin: 1em auto 1em auto;
+            border-bottom: 2px solid #0172BA;
+            border-top: 2px solid #0172BA;
+        }
+
+        .credits div {
+            text-align: center;
+        }
+
+        .back-to-index {
+            margin: 2em auto 2em auto;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header class="grid-container">
+        <div class="grid-buttons">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#"> Subscribe</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign-in</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="grid-main-logo">
+            <img src="images/logos/outdooradventuresquare.png" alt="logo">
+        </div>
+        <div class="social-media-icons">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://facebook.com"><img src="images/socialmedia/facebook32.png" title="facebook" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com"><img src="images/socialmedia/twitter32.png" title="twitter" alt="twitter"></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com"><img src="images/socialmedia/instagram32.png" title="instagram" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://pinterest.com"><img src="images/socialmedia/pinterest32.png" title="pinterest" alt="pinterest">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com"><img src="images/socialmedia/youtube32.png" title="youtube" alt="youtube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@example.com">
+                            <img src="images/socialmedia/emailat32.png" title="email" alt="email">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="grid-container-nav">
+        <nav class="grid-nav-links">
+            <ul>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Travel</a>
+                </li>
+                <li>
+                    <a href="#">Photos</a>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Reviews</a>
+                </li>
+                <li>
+                    <a href="#">Seminars</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content-grid">
+        <div class="column-1">
+            <div class="ad-image-1">
+                <img src="images/ads/mountainsThinkBig.jpg" alt="Mountains Think Big">
+            </div>
+            <div class="ad-image-2">
+                <img src="images/ads/greymountain.jpg" alt="Hike higher">
+            </div>
+        </div>
+        <div class="column-2">
+            <h2><strong>Hiking</strong></h2>
+            <p>
+                <img class="hiking-mountain-image" src="images/hiking150/hikingmountains150.jpg" alt="Hiking image">
+                In the United States, Canada, the Republic of Ireland, and United Kingdom, hiking means walking outdoors
+                on a trail, or
+                off trail, for recreational purposes. A day hike refers to a hike that can be completed in a single day.
+                However, in the
+                United Kingdom, the word walking is also used, as well as rambling, while walking in mountainous areas
+                is called
+                hillwalking. In Northern England, Including the Lake District and Yorkshire Dales, fellwalking describes
+                hill or
+                mountain walks, as fell is the common word for both features there.
+            </p>
+
+            <p>
+                <img class="winterhiker-image" src="images/hiking150/winterhiker150.jpg" alt="winter image">
+                Hiking sometimes involves bushwhacking and is sometimes referred to as such. This specifically refers to
+                difficult
+                walking through dense forest, undergrowth, or bushes, where forward progress requires pushing vegetation
+                aside. In
+                extreme cases of bushwhacking, where the vegetation is so dense that human passage is impeded, a machete
+                is used to
+                clear a pathway. The Australian term bushwalking refers to both on and off-trail hiking. Common terms
+                for hiking used by
+                New Zealanders are tramping (particularly for overnight and longer trips), walking or bushwalking.
+                Trekking is the
+                preferred word used to describe multi-day hiking in the mountainous regions of India, Pakistan, Nepal,
+                North America,
+                South America, Iran, and the highlands of East Africa. Hiking a long-distance trail from end-to-end is
+                also referred to
+                as trekking and as thru-hiking in some places. In North America, multi-day hikes, usually with camping,
+                are referred to
+                as backpacking.
+            </p>
+            <br>
+            <div class="trails-grid">
+                <div class="trails-title">
+                    <h3><strong>Trails</strong></h3>
+                </div>
+
+                <div class="national-parks-list">
+                    <h3><strong>National Parks (partial list)</strong></h3>
+
+                    <ul>
+                        <li>Banff National Park</li>
+                        <li>Cape Breton Highlands National Park</li>
+                        <li>Point Pelee National Park</li>
+                    </ul>
+                </div>
+
+                <div class="vl"></div>
+
+                <div class="provincial-parks-list">
+                    <h3><strong>Provincial Parks (partial list)</strong></h3>
+
+                    <ul>
+                        <li>Bronte Creek Provincial Park</li>
+                        <li>Rock Point Provincial Park</li>
+                        <li>Selkirk Provincial Park</li>
+                    </ul>
+                </div>
+                <br>
+            </div>
+
+            <div class="gallery">
+                <h3><strong>Gallery</strong></h3>
+                <div class="gallery-flex-container">
+                    <div class="item">
+                        <img src="images/outdoor150/outdoor150-1.jpg" alt="outdoor150-1">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/outdoor150/outdoor150-2.jpg" alt="outdoor150-2">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/outdoor150/outdoor150-3.jpg" alt="outdoor150-3">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/outdoor150/outdoor150-4.jpg" alt="outdoor150-4">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/outdoor150/outdoor150-5.jpg" alt="outdoor150-5">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/outdoor150/outdoor150-6.jpg" alt="outdoor150-6">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/outdoor150/outdoor150-7.jpg" alt="outdoor150-7">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/outdoor150/outdoor150-8.jpg" alt="outdoor150-8">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/outdoor150/outdoor150-9.jpg" alt="outdoor150-9">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/outdoor150/outdoor150-10.jpg" alt="outdoor150-10">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/outdoor150/outdoor150-11.jpg" alt="outdoor150-11">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/outdoor150/outdoor150-12.jpg" alt="outdoor150-12">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/outdoor150/outdoor150-13.png" alt="outdoor150-13">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/outdoor150/outdoor150-14.png" alt="outdoor150-14">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/outdoor150/outdoor150-15.png" alt="outdoor150-15">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column-3">
+            <h2><strong>Canoeing</strong></h2>
+            <p>
+                Canoeing is an activity which involves paddling a canoe with a single-bladed paddle. Common meanings of
+                the term are
+                limited to when the canoeing is the central purpose of the activity. Broader meanings include when it is
+                combined with
+                other activities such as canoe camping, or where canoeing is merely a transportation method used to
+                accomplish other
+                activities. Most present-day canoeing is done as or as a part of a sport or recreational activity. In
+                some parts of
+                Europe canoeing refers to both canoeing and kayaking, with a canoe being called an open canoe.
+            </p>
+
+            <p>
+                Canoes are widely used for competition and pleasure, such as racing, whitewater, touring and camping,
+                freestyle, and
+                general recreation. Canoeing has been part of the Olympics since 1936. The intended use of the canoe
+                dictates its hull
+                shape and length and construction material. Historically, canoes were dugouts or made of bark on a wood
+                frame, but
+                construction materials evolved to canvas on a wood frame, then to aluminum. Most modern canoes are made
+                of molded
+                plastic or composites such as fiberglass.
+            </p>
+
+            <p>
+                Canoes were developed by cultures all over the world, including some designed for use with sails or
+                outriggers. Until
+                the mid-1800s the canoe was an important means of transport for exploration and trade, and in some
+                places it still is
+                used as such, perhaps with the addition of an outboard motor. Where the canoe played a key role in
+                history, such as the
+                northern United States, Canada, and New Zealand, it remains an important theme in popular culture.
+            </p>
+            <br />
+
+
+            <div class="types-of-canoes">
+                <h2><strong>Types of Canoes</strong></h2>
+                <ul>
+                    <li>Sprint</li>
+                    <li>Slalom and wildwater</li>
+                    <li>Marathon</li>
+                    <li>General Recreation</li>
+                    <li>Touring and camping</li>
+                    <li>Freestyle</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="credits">
+            <div>
+                <strong>Credits</strong>
+            </div>
+            Text content was obteined from appropiate Wikipedia pages. Images were obtained from unsplash.com, social
+            media
+            buttons, were generated at iconmonstr.com and logos were created at logomaker.com. License agreement for
+            images
+            do not require citation for non-profit use.
+        </div>
+    </div>
+
+    <footer class="footer-section">
+        <div class="footer-logo">
+            <img src="images/logos/outdooradventurehorizontal.png" alt="logo">
+        </div>
+        <div class="column-2-footer">
+            <div class="horizontal-line">
+                <strong>About us</strong>
+            </div>
+            <div>
+                Who we are
+            </div>
+            <div>
+                What we stand for
+            </div>
+            <div>
+                How you can help
+            </div>
+        </div>
+
+        <div class="column-2-footer">
+            <div class="horizontal-line">
+                <strong>Reviews</strong>
+            </div>
+            <div>
+                Camping Products
+            </div>
+            <div>
+                Hiking Products
+            </div>
+        </div>
+
+        <div class="column-3-footer first-row">
+            <div class="horizontal-line">
+                <strong>Travel</strong>
+            </div>
+            <div>
+                Resources
+            </div>
+            <div>
+                Planning
+            </div>
+        </div>
+
+        <div class="column-3-footer">
+            <div class="horizontal-line">
+                <strong>Seminars</strong>
+            </div>
+            <div>
+                Trip Planning
+            </div>
+            <div>
+                Hiking
+            </div>
+            <div>
+                Camping
+            </div>
+        </div>
+
+        <div class="column-4-footer first-row">
+            <div class="horizontal-line">
+                <strong>Photos</strong>
+            </div>
+            <div>
+                Gallery
+            </div>
+            <div>
+                Submit a Photo
+            </div>
+        </div>
+
+        <div class="column-4-footer">
+            <div class="horizontal-line">
+                <strong>Events</strong>
+            </div>
+            <div>
+                Hikes
+            </div>
+            <div>
+                Vendor Demonstrations
+            </div>
+        </div>
+
+        <div class="column-5-footer first-row">
+            <div class="horizontal-line-last-column">
+                <strong>Shop</strong>
+            </div>
+            <div>
+                Camping
+            </div>
+            <div>
+                Hiking
+            </div>
+            <div>
+                Canoeing
+            </div>
+            <div>
+                Kayaking
+            </div>
+            <div>
+                Fishing
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
