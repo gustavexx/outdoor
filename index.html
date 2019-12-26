@@ -72,7 +72,6 @@
             text-align: center;
             border: 1px solid black;
             margin: 0.5em;
-            /*flex: 21%;*/
         }
 
         .item img {
@@ -95,7 +94,6 @@
             text-align: center;
         }
 
-
     </style>
 </head>
 
@@ -103,7 +101,14 @@
     <header class="grid-container">
         <div class="grid-buttons">
             <nav>
-                <ul>
+                <ul class="topnav" id="myTopnav">
+                    <li>
+                        <a href="javascript:void(0)" class="icon" onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </a>
+                    </li>
                     <li>
                         <a href="#"> Subscribe</a>
                     </li>
@@ -118,7 +123,7 @@
         </div>
         <div class="social-media-icons">
             <nav>
-                <ul>
+                <ul> 
                     <li>
                         <a href="https://facebook.com"><img src="images/socialmedia/facebook32.png" title="facebook" alt="facebook">
                         </a>
@@ -481,7 +486,22 @@
             </div>
         </div>
     </footer>
+    <script>
+        function myFunction(x) {
 
+            x.classList.toggle("change");
+            var y = document.getElementById("myTopnav");
+            
+            if(y.classList == "topnav") {
+                y.classList += " responsive";
+
+            }
+
+            else {
+                y.className = "topnav";
+            }
+        }
+    </script>
 
 </body>
 
