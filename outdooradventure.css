@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
 }
+
+.topnav li:first-child {
+    display: none;  
+}
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -202,6 +206,7 @@
         }
 
         .topnav li:first-child {
+            display: block;
             margin: 0;
             border-radius: 0;  
         }
